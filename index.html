@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Carga de Archivos</title>
+</head>
+<body>
+
+    <h2>Formulario 8</h2>
+
+    <form action="/procesar_formulario" method="post" enctype="multipart/form-data">
+        <!-- Campo para el nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <br>
+
+        <!-- Campo de carga de archivos -->
+        <label for="archivo">Selecciona un archivo:</label>
+        <input type="file" id="archivo" name="archivo" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png" required>
+
+        <br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
